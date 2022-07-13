@@ -1,8 +1,5 @@
-departuresBuild(project: "cms-react-poc") {
-  withNodeJs(version: "node-v12.16.1", npmVersion: "6.4") {
+CnNodeBuild(project: "cms-react-poc", nodeVersion: "node-v10.13.0", npmVersion: "6.12.1" ) {
     sh "npm i --unsafe-perm"
     sh "npm install -g serve"
-   // sh "npm run build"
-  }
-  dockerBuildAndPush(runtimes.nodejs("node-v12.16.1", []))
+    sh "npm run build"
 }
