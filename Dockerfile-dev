@@ -6,13 +6,13 @@ ENV PATH=${PATH}:${NODE_PATH}/react-scripts/bin
 # To control react-scripts start port
 ENV PORT=8081
 
-COPY ["bin/post-launch.bash", "bin/run-app.bash", "/tmp/conde-cms-react-poc/bin/"]
-RUN for f in /tmp/conde-cms-react-poc/bin/*; do \
-  tmp=${f#"/tmp/conde-cms-react-poc/bin/"}; \
+COPY ["bin/post-launch.bash", "bin/run-app.bash", "/tmp/cms-react-poc/bin/"]
+RUN for f in /tmp/cms-react-poc/bin/*; do \
+  tmp=${f#"/tmp/cms-react-poc/bin/"}; \
   mv ${f} /usr/bin/${tmp%".bash"}; \
   chmod +x /usr/bin/${tmp%".bash"}; \
   done \
-  && rm -rf /tmp/conde-cms-react-poc/bin
+  && rm -rf /tmp/cms-react-poc/bin
 
 RUN mkdir /usr/lib/app
 
