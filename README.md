@@ -1,3 +1,3 @@
 # cms-react-poc
 
-content management system
+content management system poc
