@@ -1,0 +1,26 @@
+FROM condenast/cn-de-node:departures
+
+ENV NODE_ENV=local
+ENV NODE_PATH=/usr/lib/app/node_modules
+ENV PATH=${PATH}:${NODE_PATH}/react-scripts/bin
+# To control react-scripts start port
+ENV PORT=8081
+
+COPY ["bin/post-launch.bash", "bin/run-app.bash", "/tmp/conde-cms-react-poc/bin/"]
+RUN for f in /tmp/conde-cms-react-poc/bin/*; do \
+  tmp=${f#"/tmp/conde-cms-react-poc/bin/"}; \
+  mv ${f} /usr/bin/${tmp%".bash"}; \
+  chmod +x /usr/bin/${tmp%".bash"}; \
+  done \
+  && rm -rf /tmp/conde-cms-react-poc/bin
+
+RUN mkdir /usr/lib/app
+
+COPY ["package.json", "/usr/lib/app/"]
+
+RUN cd /usr/lib/app \
+  && npm install \
+  && npm install -g nodemon \
+  && rm -rf package.json
+
+WORKDIR /usr/src/app

@@ -1,0 +1,129 @@
+@media only screen and (min-width: 1029px) {
+    .unique-blogs {
+        display: flex;
+        flex-flow: column wrap;
+        font-size: 1rem;
+        width: 80%;
+        border-bottom: 1px solid gray;
+    }
+
+
+    .cat-blog-title a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 4rem;
+        padding: 30px 0px;
+        padding-bottom: 20px;
+        text-transform: capitalize;
+    }
+
+    .Author {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 20px 0px;
+        align-items: center;
+        text-transform: capitalize;
+    }
+
+    .authorItem {
+        margin: 0px 10px;
+        object-fit: cover;
+    }
+
+    .authorItem img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        object-fit: initial;
+    }
+
+    .unique-blog-content {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .UniqueImage {
+        width: 50%;
+        padding-right: 3%;
+    }
+
+    .UniqueImage img {
+        justify-content: flex-start;
+        height: 500px;
+        width: 100%;
+        object-fit: unset;
+    }
+
+    .description {
+        width: 50%;
+        text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 1029px) {
+    .unique-blogs {
+        display: flex;
+        flex-flow: column wrap;
+        font-size: 1rem;
+        width: 80%;
+        border-bottom: 1px solid gray;
+    }
+
+    .cat-blog-title a {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-size: 200%;
+        padding: 30px 0px;
+        padding-bottom: 20px;
+        text-transform: capitalize;
+    }
+
+    .Author {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 20px 0px;
+        align-items: center;
+        text-transform: capitalize;
+    }
+
+    .authorItem {
+        margin: 0px 10px;
+        object-fit: cover;
+    }
+
+    .authorItem img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        object-fit: initial;
+    }
+
+    .unique-blog-content {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .UniqueImage {
+        width: 100%;
+        display: block;
+        height: 510px;
+        object-fit: cover;
+    }
+
+    .UniqueImage img {
+        height: 100%;
+        width: 100%;
+        display: block;
+        object-fit: fill;
+    }
+
+    .description {
+        width: 100%;
+        text-align: justify;
+    }
+
+}

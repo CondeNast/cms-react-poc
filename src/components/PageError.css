@@ -1,0 +1,49 @@
+.page {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.pageerror {
+  margin-top: 150px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.image img {
+  width: 100%;
+}
+
+.page-button {
+  margin-top: 40px;
+  margin-bottom: 60px;
+  background-color: var(--primary-color);
+  height: 60px;
+  padding: 10px;
+  text-decoration: none;
+
+}
+
+.page-button a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.page-button a:hover {
+  color: var(--primary-color);
+}
+
+.page-button:hover {
+  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+
+}

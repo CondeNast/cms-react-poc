@@ -1,0 +1,23 @@
+/* @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap"); */
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap'); 
+*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "PT Sans", sans-serif,; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  
+}
+body.light {
+  --primary-color:#000000;
+  --secondary-color:#ffffff;
+}
+body.dark {
+  --secondary-color:#000000;
+  --primary-color:#ffffff;
+}
+
