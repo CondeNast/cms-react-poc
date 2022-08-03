@@ -42,7 +42,7 @@
     height: 210px;
     width: 100%;
     align-items: center;
-    cursor: pointer;
+    /* cursor: pointer; */
 
 
   }
@@ -141,7 +141,7 @@
     width: 100%;
     box-sizing: border-box;
     align-items: center;
-    cursor: pointer;
+    /* cursor: pointer; */
     margin-bottom: 7%;
   }
 

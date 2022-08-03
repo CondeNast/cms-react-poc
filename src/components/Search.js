@@ -61,13 +61,15 @@ function Search({ setOpenModal, blogs }) {
             id='search-text'
             onChange={(e) => setSearchedBlog(e.target.value)}
           />
+          
           {Object.keys(filteredBlog).length > 0 && <Link  to={`/blogs/${(Object.keys(filteredBlog).length > 0 && slugify(filteredBlog.category.fields.name))}/${filteredBlog.id}/${slugify(filteredBlog.title)}`}>
-            <button id='search-btn' onClick={() => {
+            <button  className='search-btn' onClick={() => {
               setOpenModal(false);
             }} >search</button>
+            
           </Link>}
           {Object.keys(filteredBlog).length === 0 &&
-            <button className='search-btn' onClick={blogNotAvailable} >search</button>
+            <button className='search-btn1' onClick={blogNotAvailable} >search</button>
           }
         </div>
       </div>
